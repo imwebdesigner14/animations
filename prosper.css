@@ -1,0 +1,528 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+header > nav {
+    height: 6vh;
+    width:100%;
+    border-bottom: 0.2vh solid black ;
+    display: flex;
+}
+header > nav > div{
+    height: 100%;
+    width: 30%;
+    font-family: transducer,sans-serif;
+    font-size: 3vh;
+    text-align: center;
+    border-right: 0.2vh solid black;
+    margin-left: -13vh;
+    
+}
+header > nav > ul{
+    width: 70%;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0vh 3vh;
+    list-style: none;
+
+
+}
+header > nav > ul > li{
+    font-size: 2vh;
+    
+    
+}
+header > nav > ul > li > a{
+    text-decoration: none;
+    color: black;
+}
+header > nav > ul > li > span{
+    border:0.1vh solid black;
+    background-color: black ;
+    color: white ;
+    border-radius: 1vh;
+}
+header > nav > ul > li:last-child{
+    border:0.2vh solid black;
+    border-radius: 1vh;
+    color: white ;
+    background-color: black;
+}
+header > nav > ul > li > .last{
+    color: white;
+    padding: 2vh 2vh ;
+}
+/* header css end  from here */
+.banner {
+    height: 70vh;
+    width: 100%;
+    border: 0.2vh solid black ;
+    display: flex;
+}
+.banner > .box1{
+    height: 100%;
+    width: 50%;
+    border-right: 0.2vh solid black ;
+    position: relative;
+    overflow: hidden;
+}
+.banner >  .box1 > .p{
+    font-family: sans-serif;
+    position: absolute;
+    bottom: 5vh;
+    left: 3vh;
+}
+.banner > .box1 > .heading{
+    text-transform: uppercase;
+    font-family: transducer,sans-serif;
+    font-size: 58vh;
+    position: absolute;
+   
+
+
+    animation: s1 20s infinite linear;
+
+}
+
+
+@keyframes s1{
+        0%{
+            left: 0%;
+            opacity: 1;
+        
+        }
+        49.99%{
+            left: -190%;
+            opacity: 1;
+        }
+        50%{
+            left: -150%;
+            opacity: 0;
+        }
+        50.001%{
+            left: 150%;
+            opacity: 0;
+        }
+        50.002%{
+            left: 150%;
+            opacity: 1;
+        }
+        100%{
+            left: 0%;
+            opacity: 1;
+        }
+   
+}
+.banner > .box1 > .heading2{
+    text-transform: uppercase;
+    font-family: transducer,sans-serif;
+    font-size: 58vh;
+    position: absolute;
+   
+
+
+    animation: s2 20s infinite linear;
+}
+@keyframes s2{
+    0%{
+        left: 190%;
+    }
+    100%{
+        left: -190%;
+    }
+}
+
+
+
+
+
+
+
+
+/*box2 css starts from here */
+.banner > .box2 {
+    height: 100%;
+    width: 50%;
+    position: relative;
+
+
+    
+}
+.banner > .box2 > img{
+    position: absolute;
+    width: 60%;
+    z-index: 1;
+    bottom: 0vh;
+    left: 17vh;
+}
+.banner > .box2 > .top{
+    height:6vh;
+    width: 100%;
+    
+    border-bottom: 0.2vh solid black ;
+    overflow: hidden;
+    position: relative;
+   
+
+
+}
+
+.banner > .box2 > .top > .a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    text-transform: uppercase;
+    
+    column-gap: 7vh;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    font-family: transducer,sans-serif;
+    letter-spacing: 0.2vh;
+    font-size: 1.5vh;
+    top: 0vh;
+    left: 0%;
+   
+    animation: s3 8s infinite linear;
+   
+}
+
+@keyframes s3{
+    0%{
+        left: 0%;
+        opacity: 1;
+    
+    }
+    49.99%{
+        left: -100%;
+        opacity: 1;
+    }
+    50%{
+        left: -100%;
+        opacity: 0;
+    }
+    50.001%{
+        left: 100%;
+        opacity: 0;
+    }
+    50.002%{
+        left: 100%;
+        opacity: 1;
+    }
+    100%{
+        left: 0%;
+        opacity: 1;
+    }
+}
+
+.banner > .box2 > .top > .b{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        text-transform: uppercase;
+        
+        column-gap: 7vh;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        font-family: transducer,sans-serif;
+        letter-spacing: 0.2vh;
+        font-size: 1.5vh;
+        top: 0vh;
+        left: 100%;
+       
+        animation: s4 8s infinite linear;
+    }
+
+@keyframes s4{
+    0%{
+        left: 100%;
+    
+    }
+    100%{
+        left: -100%;
+    }
+}
+
+/* box2 center part css starts from here */
+
+.banner > .box2 > .center{
+    height:calc(100% - 12vh);
+    width: 100%;  
+    border-bottom: 0.2vh solid black ;
+    position: relative;
+    overflow: hidden;
+}
+.banner > .box2 > .center > .c1{
+    height: 90vh;
+    width: 90vh;
+    border: 0.2vh solid black ;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 45vh);
+    left: calc(50% - 45vh);
+    animation: round 20s infinite linear;
+
+}
+
+@keyframes round {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.banner > .box2 > .center > .c1 > span{
+    font-family: sans-serif;
+    font-size: 7vh;
+    position: absolute;
+}
+.banner > .box2 > .center > .c1 > .a{
+    top: 25vh;
+    left: 7vh;
+    transform: rotate(-67deg)
+}
+.banner > .box2 > .center > .c1 > .b{
+    top: 20vh;
+    left: 10vh;
+    transform: rotate(-59deg);
+}
+
+.banner > .box2 > .center > .c1 > .c{
+    top: 17vh;
+    left: 14vh;
+    transform: rotate(-54deg);
+}
+.banner > .box2 > .center> .c1 > .d{
+    top: 14vh;
+    left: 15vh;
+    transform: rotate(-49deg);
+}
+.banner > .box2 > .center > .c1 > .e{
+    top: 10vh;
+    left: 20vh;
+    transform: rotate(-40deg);
+}
+.banner > .box2 > .center> .c1 > .f{
+    top: 7vh;
+    left: 25vh;
+    transform: rotate(-29deg);
+}
+.banner > .box2 > .center > .c1 > .g{
+    bottom: 25vh;
+    right: 7vh;
+    transform: rotate(119deg)
+}
+.banner > .box2 > .center > .c1 > .h{
+    bottom: 20vh;
+    right: 10vh;
+    transform: rotate(-59deg);
+}
+
+.banner > .box2 > .center > .c1 > .i{
+    bottom: 16vh;
+    right: 14vh;
+    transform: rotate(-54deg);
+}
+.banner > .box2 > .center > .c1 > .j{
+    bottom: 13vh;
+    right: 15vh;
+    transform: rotate(151deg);
+}
+.banner > .box2 > .center > .c1 > .k{
+    bottom: 10vh;
+    right: 20vh;
+    transform: rotate(152deg);
+}
+.banner > .box2 > .center> .c1 > .l{
+    bottom: 7vh;
+    right: 25vh;
+    transform: rotate(151deg);
+}
+
+.banner > .box2 > .center > .c2{
+    height: 85vh;
+    width: 85vh;
+    border: 0.1vh solid transparent;
+   
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 42.5vh);
+    left: calc(50% - 42.5vh);
+}
+
+.banner > .box2 > .center > .c3{
+   
+        height: 70vh;
+        width: 70vh;
+        border: 0.2vh solid  transparent;
+        border-radius: 50%;
+        position: absolute;
+        top: calc(50% - 35vh);
+        left: calc(50% - 35vh);
+}
+.banner > .box2 > .center > .c4{
+    height: 65vh;
+    width: 65vh;
+    border: 0.2vh solid black ;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 32.5vh);
+    left: calc(50% - 32.5vh);
+}
+
+/* box2 bottom css starts from here*/
+.banner > .box2 > .bottom{
+    height: 6vh;
+    width: 100%;
+    
+   
+    overflow: hidden;
+    position: relative;
+   
+}
+.banner > .box2 > .bottom > .c{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    text-transform: uppercase;
+    
+    column-gap: 7vh;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    font-family: transducer,sans-serif;
+    letter-spacing: 0.2vh;
+    font-size: 1.5vh;
+    top: 0vh;
+    right: 0%;
+   
+    animation: s5 8s infinite linear;
+   
+}
+
+@keyframes s5{
+    0%{
+        right: 0%;
+        opacity: 1;
+    
+    }
+    49.99%{
+        right: -100%;
+        opacity: 1;
+    }
+    50%{
+        right: -100%;
+        opacity: 0;
+    }
+    50.001%{
+        right: 100%;
+        opacity: 0;
+    }
+    50.002%{
+        right: 100%;
+        opacity: 1;
+    }
+    100%{
+        right: 0%;
+        opacity: 1;
+    }
+}
+
+.banner > .box2 > .bottom > .d{
+ height: 100%;
+ width: 100%;
+ display: flex;
+ text-transform: uppercase;
+ column-gap: 7vh;
+ justify-content: space-around;
+ align-items: center;
+ position: absolute;
+ font-family: transducer,sans-serif;
+ letter-spacing: 0.2vh;
+ font-size: 1.5vh;
+ top: 0vh;
+ right: 100%;
+       
+ animation: s6 8s infinite linear;
+}
+
+@keyframes s6{
+    0%{
+        right: 100%;
+    
+    }
+    100%{
+        right: -100%;
+    }
+}
+
+/* base NFT COLLECTION css starts from here */
+.base {
+    height: calc(100vh - 76vh);
+    width: 100%;
+    border:0.2vh solid black  ;
+    position: relative;
+    overflow: hidden;
+}
+.base > p{
+    margin-top: 2vh;
+    height: 100%;
+    width: 100%;
+    font-size: 16vh;
+    font-family: sans-serif;
+    position: absolute;
+
+    animation: b1 20s infinite linear;
+}
+@keyframes b1{
+    0%{
+        left: 0%;
+        opacity: 1;
+    
+    }
+    49.99%{
+        left: -100%;
+        opacity: 1;
+    }
+    50%{
+        left: -100%;
+        opacity: 0;
+    }
+    50.001%{
+        left: 100%;
+        opacity: 0;
+    }
+    50.002%{
+        left: 100%;
+        opacity: 1;
+    }
+    100%{
+        left: 0%;
+        opacity: 1;
+    }
+}
+
+.base > .p2{
+    margin-top: 2vh;
+    height: 100%;
+    width: 100%;
+    font-size: 16vh;
+    font-family: sans-serif;
+    position: absolute;
+
+    animation: b2 20s infinite linear;
+}
+@keyframes b2{
+    0%{
+        left: 100%;
+    }
+    100%{
+        left: -100%;
+    }
+}
+
